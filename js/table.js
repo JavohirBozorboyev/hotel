@@ -116,7 +116,7 @@ lyuksBtn.addEventListener("click", () => {
 
 uchBtn.addEventListener("click", () => {
   tableTr.forEach((item) => {
-    if (item.children[2].children.length === 3) {
+    if (item.children[2].children[0].children.length === 3) {
       item.style.display = "";
     } else {
       item.style.display = "none";
@@ -126,7 +126,7 @@ uchBtn.addEventListener("click", () => {
 
 ikkiBtn.addEventListener("click", () => {
   tableTr.forEach((item) => {
-    if (item.children[2].children.length === 2) {
+    if (item.children[2].children[0].children.length === 2) {
       item.style.display = "";
     } else {
       item.style.display = "none";
@@ -136,7 +136,7 @@ ikkiBtn.addEventListener("click", () => {
 
 birBtn.addEventListener("click", () => {
   tableTr.forEach((item) => {
-    if (item.children[2].children.length === 1) {
+    if (item.children[2].children[0].children.length === 1) {
       item.style.display = "";
     } else {
       item.style.display = "none";

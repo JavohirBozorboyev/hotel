@@ -1,0 +1,71 @@
+.table .tableTr th {
+  font-size: 18px;
+}
+.table .tableTr .td1 div {
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.table .tableTr .td5 div button {
+  min-width: 100px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .table .tableTr .td1 div {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .table .tableTr .td2 div {
+    display: flex;
+  }
+  .table .tableTr .td3 div {
+    min-width: 150px;
+  }
+  .table .tableTr .td4 div {
+    width: 100px;
+  }
+
+  .table .tableTr .td5 div {
+    min-width: 230px;
+  }
+  .table .tableTr .td6 div {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .table .tableTr .td1 div {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .table .tableTr .td2 div {
+    display: flex;
+  }
+  .table .tableTr .td3 div {
+    min-width: 150px;
+  }
+  .table .tableTr .td4 div {
+    width: 100px;
+  }
+
+  .table .tableTr .td5 div {
+    min-width: 230px;
+  }
+  .table .tableTr .td6 div {
+    min-width: 320px;
+  }
+}

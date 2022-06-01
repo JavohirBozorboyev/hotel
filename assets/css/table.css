@@ -13,6 +13,13 @@
 .table .tableTr .td5 div button {
   min-width: 100px;
 }
+.table .tableTr .td6 div {
+  display: flex;
+}
+.table .tableTr .td6 div button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
   .table .tableTr .td1 div {
@@ -38,7 +45,10 @@
     min-width: 230px;
   }
   .table .tableTr .td6 div {
-    min-width: 320px;
+    min-width: 140px;
+  }
+  .table .tableTr .tName {
+    min-width: 200px;
   }
 }
 
@@ -66,6 +76,9 @@
     min-width: 230px;
   }
   .table .tableTr .td6 div {
-    min-width: 320px;
+    min-width: 140px;
+  }
+  .table .tableTr .tName {
+    min-width: 200px;
   }
 }

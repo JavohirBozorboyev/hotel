@@ -19,7 +19,6 @@ FormSec.addEventListener("keyup", (e) => {
     } else {
       item.style.display = "none";
     }
-    // console.log(item.classList.value.includes("bg-secondary"));
   });
 });
 
@@ -90,7 +89,7 @@ boshBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-success") &&
-        item.children[0].children[1].innerHTML.includes("1")
+        item.children[0].children[1].children.length == 1
       ) {
         item.style.display = "block";
       } else {
@@ -103,7 +102,7 @@ boshBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-success") &&
-        item.children[0].children[1].innerHTML.includes("2")
+        item.children[0].children[1].children.length == 2
       ) {
         item.style.display = "block";
       } else {
@@ -116,7 +115,7 @@ boshBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-success") &&
-        item.children[0].children[1].innerHTML.includes("3")
+        item.children[0].children[1].children.length == 3
       ) {
         item.style.display = "block";
       } else {
@@ -176,7 +175,7 @@ banEtBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-secondary") &&
-        item.children[0].children[1].innerHTML.includes("1")
+        item.children[0].children[1].children.length == 1
       ) {
         item.style.display = "block";
       } else {
@@ -189,7 +188,7 @@ banEtBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-secondary") &&
-        item.children[0].children[1].innerHTML.includes("2")
+        item.children[0].children[1].children.length == 2
       ) {
         item.style.display = "block";
       } else {
@@ -202,7 +201,7 @@ banEtBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-secondary") &&
-        item.children[0].children[1].innerHTML.includes("3")
+        item.children[0].children[1].children.length == 3
       ) {
         item.style.display = "block";
       } else {
@@ -262,7 +261,7 @@ bandBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-danger") &&
-        item.children[0].children[1].innerHTML.includes("1")
+        item.children[0].children[1].children.length == 1
       ) {
         item.style.display = "block";
       } else {
@@ -275,7 +274,7 @@ bandBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-danger") &&
-        item.children[0].children[1].innerHTML.includes("2")
+        item.children[0].children[1].children.length == 2
       ) {
         item.style.display = "block";
       } else {
@@ -288,7 +287,7 @@ bandBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-danger") &&
-        item.children[0].children[1].innerHTML.includes("3")
+        item.children[0].children[1].children.length == 3
       ) {
         item.style.display = "block";
       } else {
@@ -348,7 +347,7 @@ tozBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-warning") &&
-        item.children[0].children[1].innerHTML.includes("1")
+        item.children[0].children[1].children.length == 1
       ) {
         item.style.display = "block";
       } else {
@@ -361,7 +360,7 @@ tozBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-warning") &&
-        item.children[0].children[1].innerHTML.includes("2")
+        item.children[0].children[1].children.length == 2
       ) {
         item.style.display = "block";
       } else {
@@ -374,7 +373,7 @@ tozBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-warning") &&
-        item.children[0].children[1].innerHTML.includes("3")
+        item.children[0].children[1].children.length == 3
       ) {
         item.style.display = "block";
       } else {
@@ -434,7 +433,7 @@ tamBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-dark") &&
-        item.children[0].children[1].innerHTML.includes("1")
+        item.children[0].children[1].children.length == 1
       ) {
         item.style.display = "block";
       } else {
@@ -447,7 +446,7 @@ tamBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-dark") &&
-        item.children[0].children[1].innerHTML.includes("2")
+        item.children[0].children[1].children.length == 2
       ) {
         item.style.display = "block";
       } else {
@@ -460,7 +459,7 @@ tamBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
       if (
         item.classList.value.includes("bg-dark") &&
-        item.children[0].children[1].innerHTML.includes("3")
+        item.children[0].children[1].children.length == 3
       ) {
         item.style.display = "block";
       } else {
@@ -502,9 +501,9 @@ lyuksBtn.addEventListener("click", () => {
 
 birBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
-    let value = item.children[0].children[1].innerHTML;
-    console.log(value);
-    if (value.includes("1")) {
+    let value = item.children[0].children[1].children.length;
+
+    if (value == 1) {
       item.style.display = "block";
     } else {
       item.style.display = "none";
@@ -514,8 +513,8 @@ birBtn.addEventListener("click", () => {
 
 ikkiBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
-    let value = item.children[0].children[1].innerHTML;
-    if (value.includes("2")) {
+    let value = item.children[0].children[1].children.length;
+    if (value == 2) {
       item.style.display = "block";
     } else {
       item.style.display = "none";
@@ -525,8 +524,8 @@ ikkiBtn.addEventListener("click", () => {
 
 uchBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
-    let value = item.children[0].children[1].innerHTML;
-    if (value.includes("3")) {
+    let value = item.children[0].children[1].children.length;
+    if (value == 3) {
       item.style.display = "block";
     } else {
       item.style.display = "none";

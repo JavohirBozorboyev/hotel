@@ -1,0 +1,56 @@
+.bg-dark {
+  background: #7e7e7e !important;
+}
+.bg-warning {
+  background: #ffdd65 !important;
+}
+.bg-danger {
+  background: #ffbaba !important;
+}
+.bg-secondary {
+  background: #e2e2e2 !important;
+}
+.bg-dark .header-card h3 {
+  color: #fff;
+}
+
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardXona {
+  width: 240px;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-card div h3 {
+  font-size: 22px;
+}
+.cBody p {
+  font-size: 18px;
+}
+.cBody div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .cardXona {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+  .cardXona {
+    width: 48%;
+  }
+}

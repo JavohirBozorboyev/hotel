@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="assets/"
+  data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -44,6 +44,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="../../assets/css/demo.css" />
+    <link rel="stylesheet" href="../../assets/css/table.css" />
 
     <!-- Page CSS -->
 
@@ -69,7 +70,7 @@
             </div>
 
             <a
-              href=""
+              href="javascriptvoid(0)"
               class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
             >
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -90,13 +91,13 @@
                 <div data-i18n="Analytics">Honalar</div>
               </a>
             </li>
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="../xodimlar.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Analytics">Xodimlar</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="../mehmonlar.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-smile"></i>
                 <div data-i18n="Analytics">Mehmonlar</div>
@@ -144,14 +145,14 @@
             <div
               class="bg-white mt-4 rounded-1 shadow-sm p-2 d-flex align-items-center flex-wrap justify-content-center justify-content-sm-between"
             >
-              <div>Xodimning Malumotlarini O'zgartirish</div>
+              <div>Mehmonning Malumotlarini O'zgartirish</div>
 
               <button class="btn btn-primary m-1" disabled>
-                Xodim Qo'shish
+                Mehmon Qo'shish
               </button>
             </div>
 
-            <!-- card box -->
+            <!-- Mehmonlar malumotini o'zgartirish -->
             <section class="mt-5 mb-5 overflow-hidden">
               <div class="bg-white p-4 rounded-2">
                 <form action="">
@@ -226,19 +227,63 @@
                       </select>
                     </div>
                   </div>
+                  <div class="d-flex justify-content-between flex-wrap mt-3">
+                    <div class="mb-3 w-px-300">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Pasport Seria va Ramqami</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        value="AA 16 16 304"
+                      />
+                    </div>
+                    <div class="mb-3 w-px-300">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Berilgan Sana</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        value="Uzbekistan"
+                      />
+                    </div>
+                    <div class="mb-3 w-px-300">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Kim Tomonidan Berilgan
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        value="Namangan IIB"
+                      />
+                    </div>
+                    <div class="mb-3 w-px-300">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Fuqaroligi
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        value="O'zbek"
+                      />
+                    </div>
+                  </div>
                   <div>
                     <div class="mt-2">
                       <label for="exampleFormControlInput1" class="form-label"
-                        >Lavozimi</label
+                        >Ish joyi</label
                       >
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option value="">Hona Tozalovchi</option>
-                        <option value="">Boshqaruv Meneger</option>
-                        <option value="">Oshpaz</option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        value="Namangan vil. Hokimyati"
+                      />
                     </div>
                     <div class="mt-3">
                       <label for="exampleFormControlInput1" class="form-label"
@@ -265,12 +310,12 @@
                       class="mt-4 position-relative d-flex justify-content-center"
                     >
                       <a
-                        href="../xodimlar.html"
+                        href="../mehmonlar.html"
                         class="btn btn-outline-primary m-1 w-px-150"
                         >Ortga</a
                       >
                       <a
-                        href="../xodimlar.html"
+                        href="../mehmonlar.html"
                         class="btn btn-primary m-1 w-px-150"
                         >Saqlash</a
                       >
@@ -292,7 +337,7 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-
+    <script src="../../js/xodimlar.js"></script>
     <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="../../assets/vendor/js/bootstrap.js"></script>

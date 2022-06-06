@@ -1438,3 +1438,84 @@ hamBtn.addEventListener("click", () => {
     item.style.display = "";
   });
 });
+
+// -------------------------------------- Modal Sellect filter ---------------------------------------------------------
+
+let selName = document.querySelectorAll(".selName");
+let modalSearch = document.querySelector(".modalSearch");
+let modQosh = document.querySelector(".modQosh");
+let modQid = document.querySelector(".modQid");
+let modQidBox = document.querySelector(".modQidBox");
+let modQoshBox = document.querySelector(".modQoshBox");
+let modQidReset = document.querySelector(".modQidReset");
+
+// bo'sh hona bron qilish
+modalSearch.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selName.length; i++) {
+      selName[i].style.display = "block";
+    }
+  }
+  selName.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+modQidReset.addEventListener("click", () => {
+  selName.forEach((item) => {
+    item.style.display = "block";
+  });
+});
+
+modQosh.addEventListener("click", (e) => {
+  modQid.classList.remove("btn-primary");
+  modQosh.classList.remove("btn-outline-primary");
+  modQid.classList.add("btn-outline-primary");
+  modQosh.classList.add("btn-primary");
+
+  modQoshBox.style.display = "block";
+  modQidBox.style.display = "none";
+});
+
+modQid.addEventListener("click", (e) => {
+  modQosh.classList.remove("btn-primary");
+  modQid.classList.remove("btn-outline-primary");
+  modQosh.classList.add("btn-outline-primary");
+  modQid.classList.add("btn-primary");
+  modQoshBox.style.display = "none";
+  modQidBox.style.display = "block";
+});
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+let modalSearchTozalsh = document.querySelector(".modalSearchTozalsh");
+let selNameIsh = document.querySelectorAll(".selNameIsh");
+let modTozalshReset = document.querySelector(".modTozalshReset");
+
+// tozolovda card
+modalSearchTozalsh.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selNameIsh.length; i++) {
+      selNameIsh[i].style.display = "block";
+    }
+  }
+  selNameIsh.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+modTozalshReset.addEventListener("click", () => {
+  selNameIsh.forEach((item) => {
+    item.style.display = "block";
+  });
+});

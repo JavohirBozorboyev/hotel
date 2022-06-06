@@ -282,45 +282,17 @@
 
                     <div>
                       <button class="btn btn-primary btn-sm">Band</button>
-                      <button class="btn btn-primary btn-sm">Bron</button>
+                      <button
+                        class="btn btn-primary btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Bron
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="bg-success cardXona text-white">
-                  <div class="header-card">
-                    <h3>111 xona</h3>
-                    <div>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                    </div>
-                  </div>
-                  <div class="cBody">
-                    <div><p>Lyuks</p></div>
 
-                    <div>
-                      <button class="btn btn-primary btn-sm">Band</button>
-                      <button class="btn btn-primary btn-sm">Bron</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-success cardXona text-white">
-                  <div class="header-card">
-                    <h3>114 xona</h3>
-                    <div>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                    </div>
-                  </div>
-                  <div class="cBody">
-                    <div><p>Polu-Lyuks</p></div>
-
-                    <div>
-                      <button class="btn btn-primary btn-sm">Band</button>
-                      <button class="btn btn-primary btn-sm">Bron</button>
-                    </div>
-                  </div>
-                </div>
                 <div class="cardXona bg-dark text-white">
                   <div class="header-card">
                     <h3>102 xona</h3>
@@ -338,37 +310,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cardXona bg-dark text-white">
-                  <div class="header-card">
-                    <h3>142 xona</h3>
-                    <div>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                    </div>
-                  </div>
-                  <div class="cBody">
-                    <div><p>Lyuks</p></div>
 
-                    <div>
-                      <button class="btn btn-primary btn-sm">Tozolovga</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="cardXona bg-dark text-white">
-                  <div class="header-card">
-                    <h3>122 xona</h3>
-                    <div>
-                      <h3 class="bx bx-user"></h3>
-                    </div>
-                  </div>
-                  <div class="cBody">
-                    <div><p>Oddiy</p></div>
-
-                    <div>
-                      <button class="btn btn-primary btn-sm">Tozolovga</button>
-                    </div>
-                  </div>
-                </div>
                 <div class="cardXona bg-warning text-white">
                   <div class="header-card">
                     <h3>103 xona</h3>
@@ -381,7 +323,14 @@
                     <div><p>Lyuks</p></div>
 
                     <div>
-                      <button class="btn btn-primary btn-sm">Boshatish</button>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1"
+                      >
+                        Boshatish
+                      </button>
                       <button class="btn btn-primary btn-sm">Remont</button>
                     </div>
                   </div>
@@ -673,6 +622,347 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+
+    <!-- band modal section start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hona Bron Qilish</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4 d-flex justify-content-end">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-primary modQosh">
+                  + Qo'shish
+                </button>
+                <button type="button" class="btn btn-primary modQid">
+                  Qidirsh
+                </button>
+              </div>
+            </div>
+            <div class="modQidBox">
+              <form>
+                <div class="mb-3 d-flex">
+                  <input
+                    type="Search..."
+                    class="form-control modalSearch"
+                    id="recipient-name"
+                    placeholder="Search..."
+                  />
+                  <button class="btn btn-primary mx-1">Add</button>
+                </div>
+                <div>
+                  <select
+                    class="form-select"
+                    size="8"
+                    aria-label="size 8 select example"
+                  >
+                    <option value="" class="p-2 selName">
+                      Alisher Botirov
+                    </option>
+                    <option value="" class="p-2 selName">
+                      Saydulla Uzoqov
+                    </option>
+                    <option value="" class="p-2 selName">Qodirov Arslon</option>
+                    <option value="" class="p-2 selName">Temur Po'latov</option>
+                    <option value="" class="p-2 selName">
+                      Arslonov Doniyor
+                    </option>
+                    <option value="" class="p-2 selName">
+                      Hafizullo Boriyev
+                    </option>
+                    <option value="" class="p-2 selName">Temur Po'latov</option>
+                    <option value="" class="p-2 selName">Temur Po'latov</option>
+                    <option value="" class="p-2 selName">Temur Po'latov</option>
+                    <option value="" class="p-2 selName">Temur Po'latov</option>
+                  </select>
+                </div>
+                <div
+                  class="mt-4 position-relative d-flex justify-content-center"
+                >
+                  <button
+                    type="reset"
+                    class="btn btn-outline-primary m-1 w-px-150 modQidReset"
+                  >
+                    Tozalash
+                  </button>
+                  <button type="button" class="btn btn-primary m-1 w-px-150">
+                    Saqlash
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modQoshBox" style="display: none">
+              <form action="">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Ism</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Eshmat"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Familiya</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Toshmatov"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Otasining Ismi</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="G'ishtemir O'g'li"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap mt-3">
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Telfon raqam</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="+998991234567"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Tug'ulgan Sana</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="01.06.2022"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Jinsi</label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="Erkak">Erkak</option>
+                      <option value="Ayol">Ayol</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap mt-3">
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Pasport Seria va Ramqami</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="AA 16 16 304"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Berilgan Sana</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Uzbekistan"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Kim Tomonidan Berilgan
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Namangan IIB"
+                    />
+                  </div>
+                  <div class="mb-3 w-px-300">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Fuqaroligi
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="O'zbek"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="mt-2">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Ish joyi</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Namangan vil. Hokimyati"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Manzil</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      value="Namangan vil. Chortoq tumani, Guldirov QFY, Mustaqillik k. 77-uy."
+                    />
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="6"
+                      placeholder="Qo'shimcha Izoh..."
+                    ></textarea>
+                  </div>
+                  <div
+                    class="mt-4 position-relative d-flex justify-content-center"
+                  >
+                    <button
+                      type="reset"
+                      class="btn btn-outline-primary m-1 w-px-150"
+                    >
+                      Tozalash
+                    </button>
+                    <button type="button" class="btn btn-primary m-1 w-px-150">
+                      Saqlash
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- band modal section end -->
+
+    <!-- tozalash modal section -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Honani Tozalash</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <form>
+                <div class="mb-3 d-flex">
+                  <input
+                    type="Search..."
+                    class="form-control modalSearchTozalsh"
+                    id="recipient-name"
+                    placeholder="Search..."
+                  />
+                  <button class="btn btn-primary mx-1">Add</button>
+                </div>
+                <div>
+                  <select
+                    class="form-select"
+                    size="8"
+                    aria-label="size 8 select example"
+                  >
+                    <option value="" class="p-2 selNameIsh">
+                      Alisher Botirov
+                    </option>
+                    <option value="" class="p-2 selNameIsh">
+                      Saydulla Uzoqov
+                    </option>
+                    
+                  </select>
+                </div>
+                <div
+                  class="mt-4 position-relative d-flex justify-content-center"
+                >
+                  <button
+                    type="reset"
+                    class="btn btn-outline-primary m-1 w-px-150 modTozalshReset"
+                  >
+                    Tozalash
+                  </button>
+                  <button type="button" class="btn btn-primary m-1 w-px-150">
+                    Saqlash
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tozalash modal section end -->
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

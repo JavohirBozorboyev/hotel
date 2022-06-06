@@ -1,6 +1,27 @@
 const cardXona = document.querySelectorAll(".cardXona");
 const searchA = document.querySelector(".searchA");
 const FormSec = document.querySelector(".formSec");
+const jadval = document.querySelector(".jadval");
+const kartochka = document.querySelector(".kartochka");
+const cardSection = document.querySelector(".cardSection");
+const tableSection = document.querySelector(".tableSection");
+
+jadval.addEventListener("click", () => {
+  tableSection.classList.remove("d-none");
+  cardSection.classList.add("d-none");
+  jadval.classList.remove("btn-outline-primary");
+  jadval.classList.add("btn-primary");
+  kartochka.classList.remove("btn-primary");
+  kartochka.classList.add("btn-outline-primary");
+});
+kartochka.addEventListener("click", () => {
+  tableSection.classList.add("d-none");
+  cardSection.classList.remove("d-none");
+  jadval.classList.remove("btn-primary");
+  jadval.classList.add("btn-outline-primary");
+  kartochka.classList.remove("btn-outline-primary");
+  kartochka.classList.add("btn-primary");
+});
 
 FormSec.addEventListener("keyup", (e) => {
   e.preventDefault();
@@ -16,6 +37,15 @@ FormSec.addEventListener("keyup", (e) => {
           }
         }
       }
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  // table search
+  tableTr.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(searchValue.toLowerCase())) {
+      item.style.display = "";
     } else {
       item.style.display = "none";
     }
@@ -38,6 +68,25 @@ const lyuksBtn = document.querySelector(".lyuksBtn");
 const birBtn = document.querySelector(".birBtn");
 const ikkiBtn = document.querySelector(".ikkiBtn");
 const uchBtn = document.querySelector(".uchBtn");
+const tableTr = document.querySelectorAll(".tableTr");
+const turi = document.querySelectorAll(".turi");
+const home = document.querySelectorAll(".home");
+// turi.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     for (let key of turi) {
+//       key.classList.remove("btn-dark");
+//       key.classList.add("btn-outline-secondary");
+//     }
+//     e.target.classList.remove("btn-outline-secondary");
+//     e.target.classList.add("btn-dark");
+//   });
+// });
+// let data, data1;
+// home.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     console.log(e.target.textContent);
+//   });
+// });
 
 boshBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
@@ -58,6 +107,45 @@ boshBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -69,6 +157,45 @@ boshBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -82,6 +209,45 @@ boshBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-success") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -122,6 +288,15 @@ boshBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+  });
+
+  // tabel
+  tableTr.forEach((item) => {
+    if (item.classList.value.includes("bosh")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   });
 });
 
@@ -144,6 +319,45 @@ banEtBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -155,6 +369,45 @@ banEtBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -168,6 +421,45 @@ banEtBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-secondary") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -208,6 +500,15 @@ banEtBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+  });
+
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.classList.value.includes("bandEt")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   });
 });
 
@@ -230,6 +531,45 @@ bandBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -241,6 +581,45 @@ bandBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -254,6 +633,45 @@ bandBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-danger") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -294,6 +712,14 @@ bandBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+  });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.classList.value.includes("bandXona")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   });
 });
 
@@ -316,6 +742,45 @@ tozBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -327,6 +792,45 @@ tozBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -340,6 +844,45 @@ tozBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-warning") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -380,6 +923,14 @@ tozBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+  });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.classList.value.includes("tozalash")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
   });
 });
 
@@ -402,6 +953,45 @@ tamBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -413,6 +1003,45 @@ tamBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -426,6 +1055,45 @@ tamBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.classList.value.includes("bg-dark") &&
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -467,12 +1135,66 @@ tamBtn.addEventListener("click", () => {
       }
     });
   });
+  // table filter
+
+  tableTr.forEach((item) => {
+    if (item.classList.value.includes("remont")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
 });
 
 oddiyBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
     if (item.innerHTML.toLowerCase().includes("oddiy")) {
       item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+  uchBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("oddiy") &&
+        item.children[0].children[1].children.length == 3
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  ikkiBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("oddiy") &&
+        item.children[0].children[1].children.length == 2
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  birBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("oddiy") &&
+        item.children[0].children[1].children.length == 1
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[4].innerHTML.includes("Oddiy")) {
+      item.style.display = "";
     } else {
       item.style.display = "none";
     }
@@ -487,12 +1209,100 @@ poluBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
+  uchBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+        item.children[0].children[1].children.length == 3
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  ikkiBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+        item.children[0].children[1].children.length == 2
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  birBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+        item.children[0].children[1].children.length == 1
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[4].innerHTML.includes("Polu-Lyuks")) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
 });
 
 lyuksBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
     if (item.innerHTML.toLowerCase().includes("lyuks")) {
       item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+  uchBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("lyuks") &&
+        item.children[0].children[1].children.length == 3
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  ikkiBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("lyuks") &&
+        item.children[0].children[1].children.length == 2
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  birBtn.addEventListener("click", () => {
+    cardXona.forEach((item) => {
+      if (
+        item.innerHTML.toLowerCase().includes("lyuks") &&
+        item.children[0].children[1].children.length == 1
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[4].innerHTML.includes("Lyuks")) {
+      item.style.display = "";
     } else {
       item.style.display = "none";
     }
@@ -509,6 +1319,14 @@ birBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[2].children[0].children.length === 1) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
 });
 
 ikkiBtn.addEventListener("click", () => {
@@ -520,6 +1338,14 @@ ikkiBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[2].children[0].children.length === 2) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
 });
 
 uchBtn.addEventListener("click", () => {
@@ -527,6 +1353,14 @@ uchBtn.addEventListener("click", () => {
     let value = item.children[0].children[1].children.length;
     if (value == 3) {
       item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+  // table filter
+  tableTr.forEach((item) => {
+    if (item.children[2].children[0].children.length === 3) {
+      item.style.display = "";
     } else {
       item.style.display = "none";
     }
@@ -597,5 +1431,10 @@ hamBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+  });
+
+  // table filer
+  tableTr.forEach((item) => {
+    item.style.display = "";
   });
 });

@@ -30,7 +30,7 @@ let paginationlength = Math.ceil(tableTr.length / 10);
 let pagNum = document.querySelectorAll(".pagNum");
 
 for (let i = 1; i <= paginationlength; i++) {
-  pagination.innerHTML += `<button type="button" class="btn btn-primary m-1 pagNum">${i}</button>`;
+  pagination.innerHTML += `<button type="button" class="btn btn-primary btn-sm m-1 pagNum">${i}</button>`;
 
   for (let i = 0; i < tableTr.length; i++) {
     if (i > 9) {

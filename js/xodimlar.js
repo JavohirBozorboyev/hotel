@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $("#example").DataTable();
+});
+
 let tableTr = document.querySelectorAll(".tableTr");
 const FormSec = document.querySelector(".formSec");
 let searchA = document.querySelector(".searchA");

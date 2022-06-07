@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (min-width: 1900px) and (max-width: 2500px) {
+@media screen and (min-width: 1900px) and (max-width: 4000px) {
   .table .tableTr .td1 div {
     width: 140px;
     display: flex;

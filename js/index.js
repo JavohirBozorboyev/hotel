@@ -1448,6 +1448,8 @@ let modQid = document.querySelector(".modQid");
 let modQidBox = document.querySelector(".modQidBox");
 let modQoshBox = document.querySelector(".modQoshBox");
 let modQidReset = document.querySelector(".modQidReset");
+let addSelModalBox = document.querySelector(".addSelModalBox");
+let addIshModalBtnSel = document.querySelector(".addIshModalBtnSel");
 
 // bo'sh hona bron qilish
 modalSearch.addEventListener("keyup", (e) => {
@@ -1489,6 +1491,10 @@ modQid.addEventListener("click", (e) => {
   modQid.classList.add("btn-primary");
   modQoshBox.style.display = "none";
   modQidBox.style.display = "block";
+});
+
+addIshModalBtnSel.addEventListener("click", () => {
+  addSelModalBox.style.display = "block";
 });
 
 // ---------------------------------------------------------------------------------------------------------------------

@@ -1450,6 +1450,8 @@ let modQoshBox = document.querySelector(".modQoshBox");
 let modQidReset = document.querySelector(".modQidReset");
 let addSelModalBox = document.querySelector(".addSelModalBox");
 let addIshModalBtnSel = document.querySelector(".addIshModalBtnSel");
+let modalSelSearch5 = document.querySelector(".modalSelSearch5");
+let selIshJoy = document.querySelectorAll(".selIshJoy");
 
 // bo'sh hona bron qilish
 modalSearch.addEventListener("keyup", (e) => {
@@ -1460,6 +1462,22 @@ modalSearch.addEventListener("keyup", (e) => {
     }
   }
   selName.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+modalSelSearch5.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selIshJoy.length; i++) {
+      selIshJoy[i].style.display = "block";
+    }
+  }
+  selIshJoy.forEach((item) => {
     if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
       item.style.display = "block";
     } else {
@@ -1523,5 +1541,101 @@ modalSearchTozalsh.addEventListener("keyup", (e) => {
 modTozalshReset.addEventListener("click", () => {
   selNameIsh.forEach((item) => {
     item.style.display = "block";
+  });
+});
+
+// -----------------------------------band hona filter -------------------------------------
+
+let modalSearchTozalshband = document.querySelector(".modalSearchTozalshband");
+let selNameIshband = document.querySelectorAll(".selNameIshband");
+
+modalSearchTozalshband.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selNameIshband.length; i++) {
+      selNameIshband[i].style.display = "block";
+    }
+  }
+  selNameIshband.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+// ----------------- Bosh hona band qilish ---------------------------------------------------
+
+let selNameBand = document.querySelectorAll(".selNameBand");
+let modalSearchBand = document.querySelector(".modalSearchBand");
+let modQoshBand = document.querySelector(".modQoshBand");
+let modQidBand = document.querySelector(".modQidBand");
+let modQidBoxBand = document.querySelector(".modQidBoxBand");
+let modQoshBoxBand = document.querySelector(".modQoshBoxBand");
+let modQidResetBand = document.querySelector(".modQidResetBand");
+let addSelModalBoxBand = document.querySelector(".addSelModalBoxBand");
+let addIshModalBtnSelBand = document.querySelector(".addIshModalBtnSelBand");
+let modalSelSearch5Band = document.querySelector(".modalSelSearch5Band");
+let selIshJoyBand = document.querySelectorAll(".selIshJoyBand");
+
+modalSearchBand.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selName.length; i++) {
+      selNameBand[i].style.display = "block";
+    }
+  }
+  selNameBand.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
+
+modQoshBand.addEventListener("click", (e) => {
+  modQidBand.classList.remove("btn-primary");
+  modQoshBand.classList.remove("btn-outline-primary");
+  modQidBand.classList.add("btn-outline-primary");
+  modQoshBand.classList.add("btn-primary");
+
+  modQoshBoxBand.style.display = "block";
+  modQidBoxBand.style.display = "none";
+});
+
+modQidBand.addEventListener("click", (e) => {
+  modQoshBand.classList.remove("btn-primary");
+  modQidBand.classList.remove("btn-outline-primary");
+  modQoshBand.classList.add("btn-outline-primary");
+  modQidBand.classList.add("btn-primary");
+  modQoshBoxBand.style.display = "none";
+  modQidBoxBand.style.display = "block";
+});
+
+modQidResetBand.addEventListener("click", () => {
+  selNameBand.forEach((item) => {
+    item.style.display = "block";
+  });
+});
+
+addIshModalBtnSelBand.addEventListener("click", () => {
+  addSelModalBoxBand.style.display = "block";
+});
+
+modalSelSearch5Band.addEventListener("keyup", (e) => {
+  let value = e.target.value;
+  if (value == "") {
+    for (let i = 0; i < selIshJoyBand.length; i++) {
+      selIshJoyBand[i].style.display = "block";
+    }
+  }
+  selIshJoyBand.forEach((item) => {
+    if (item.innerHTML.toLowerCase().includes(value.toLowerCase())) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
   });
 });

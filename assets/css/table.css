@@ -15,6 +15,7 @@
 }
 .table .tableTr .td6 div {
   display: flex;
+  justify-content: center;
 }
 .table .tableTr .td6 div button {
   margin-left: 5px;
@@ -78,9 +79,57 @@
   }
   .table .tableTr .td6 div {
     min-width: 140px;
+    display: flex;
+    justify-content: center;
   }
 
   .table .tableTr .tName {
     min-width: 200px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1899px) {
+  .table .tableTr .td6 div {
+    min-width: 140px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2500px) {
+  .table .tableTr .td1 div {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .table .tableTr .td2 div {
+    display: flex;
+  }
+  .table .tableTr .td3 div {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .table .tableTr .td4 div {
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .table .tableTr .td5 div {
+    min-width: 230px;
+  }
+
+  .table .tableTr .tName {
+    min-width: 250px;
+  }
+  .table .tableTr .td6 div {
+    min-width: 140px;
   }
 }

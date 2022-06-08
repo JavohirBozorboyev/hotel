@@ -6,7 +6,7 @@ let modQidBox = document.querySelector(".modQidBox");
 let modQoshBox = document.querySelector(".modQoshBox");
 let modQidReset = document.querySelector(".modQidReset");
 let addSelModalBox = document.querySelector(".addSelModalBox");
-let addIshModalBtnSel = document.querySelector(".addIshModalBtnSel");
+
 let modalSelSearch5 = document.querySelector(".modalSelSearch5");
 let selIshJoy = document.querySelectorAll(".selIshJoy");
 
@@ -67,9 +67,7 @@ modQid.addEventListener("click", (e) => {
   modQidBox.style.display = "block";
 });
 
-addIshModalBtnSel.addEventListener("click", () => {
-  addSelModalBox.style.display = "block";
-});
+
 
 let modalSearchTozalsh = document.querySelector(".modalSearchTozalsh");
 let selNameIsh = document.querySelectorAll(".selNameIsh");

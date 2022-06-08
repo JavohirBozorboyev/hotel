@@ -77,39 +77,62 @@
             </a>
           </div>
 
-          <ul class="menu-inner py-1">
-            <!-- Dashboard -->
-            <li class="menu-item">
-              <a href="../index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home"></i>
-                <div data-i18n="Analytics">Bosh Sahifa</div>
-              </a>
-            </li>
-            <li class="menu-item active">
-              <a href="honalar.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-door-open"></i>
-                <div data-i18n="Analytics">Honalar</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="xodimlar.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user"></i>
-                <div data-i18n="Analytics">Xodimlar</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="mehmonlar.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-smile"></i>
-                <div data-i18n="Analytics">Mehmonlar</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="sms.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-envelope"></i>
-                <div data-i18n="Analytics">SMS</div>
-              </a>
-            </li>
-          </ul>
+          <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
+            <ul class="menu-inner py-1">
+              <!-- Dashboard -->
+              <li class="menu-item ">
+                <a href="../index.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home"></i>
+                  <div data-i18n="Analytics">Bosh Sahifa</div>
+                </a>
+              </li>
+              <li class="menu-item active">
+                <a href="honalar.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-door-open"></i>
+                  <div data-i18n="Analytics">Honalar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="xodimlar.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-user"></i>
+                  <div data-i18n="Analytics">Xodimlar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="mehmonlar.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-smile"></i>
+                  <div data-i18n="Analytics">Mehmonlar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="sms.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-envelope"></i>
+                  <div data-i18n="Analytics">SMS</div>
+                </a>
+              </li>
+            </ul>
+            <ul class="p-2">
+              <div class="d-flex align-items-center">
+                <div>
+                  <button class="btn btn-primary py-1 px-3">
+                    <i class="bx bx-lock-alt"></i>
+                  </button>
+                </div>
+                <div class="btn-group w-100 mx-1 dropup">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bx bx-user-circle" style="font-size: 25px;"></i>
+                    Name
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">Shaxsiy sahifa</a></li>
+                    <li><a class="dropdown-item" href="">Parolni o'zgartirish</a></li>
+                    
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a  class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
+                  </ul>
+                </div>
+            </ul>
+          </div>
         </aside>
         <!-- / Menu -->
 

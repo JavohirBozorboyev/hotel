@@ -1007,7 +1007,7 @@ $jscomp.polyfill(
       d = a.oLanguage,
       e = a.oPreviousSearch,
       h = a.aanFeatures,
-      f = '<input type="search" class="' + b.sFilterInput + '"/>',
+      f = '<input type="search" class=" ' + b.sFilterInput + '"/>',
       g = d.sSearch;
     g = g.match(/_INPUT_/) ? g.replace("_INPUT_", f) : g + f;
     b = l("<div/>", {
@@ -1280,7 +1280,7 @@ $jscomp.polyfill(
       e = Array.isArray(d[0]),
       h = e ? d[0] : d;
     d = e ? d[1] : d;
-    e = l("<select/>", {
+    e = l("<select  />", {
       name: c + "_length",
       "aria-controls": c,
       class: b.sLengthSelect,

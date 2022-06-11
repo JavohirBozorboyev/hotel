@@ -70,7 +70,7 @@
             </div>
 
             <a
-              href="/index.html"
+              href="javascript:void(0)"
               class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
             >
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -124,11 +124,11 @@
                     Name
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">Shaxsiy sahifa</a></li>
-                    <li><a class="dropdown-item" href="">Parolni o'zgartirish</a></li>
+                    <li><a class="dropdown-item" href="account.html">Shaxsiy sahifa</a></li>
+                    <li><a class="dropdown-item" href="xodimpassword.html">Parolni o'zgartirish</a></li>
                     
                     <li><hr class="dropdown-divider"></li>
-                    <li><a  class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
+                    <li><a href="../login.html"  class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
                   </ul>
                 </div>
             </ul>
@@ -286,7 +286,7 @@
             <!-- card box -->
             <section class="mt-5 mb-5 overflow-hidden">
               <div class="bg-white rounded-2 table-responsive">
-                <table class="table">
+                <table class="table table-hover">
                   <tbody>
                     <tr class="tableTr bandEt">
                       <th scope="row">101</th>
@@ -304,7 +304,7 @@
                       <td class="td4"><div>Lyuks</div></td>
                       <td class="td6">
                         <div>
-                          <button class="btn btn-primary btn-sm d-flex">
+                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bx bx-trash"></i>
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
@@ -338,7 +338,7 @@
                       <td class="td4"><div>Polu-Lyuks</div></td>
                       <td class="td6">
                         <div>
-                          <button class="btn btn-primary btn-sm d-flex">
+                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bx bx-trash"></i>
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
@@ -368,7 +368,7 @@
                       <td class="td4"><div>Oddiy</div></td>
                       <td class="td6">
                         <div>
-                          <button class="btn btn-primary btn-sm d-flex">
+                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bx bx-trash"></i>
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
@@ -400,7 +400,7 @@
                       <td class="td4"><div>Polu-Lyuks</div></td>
                       <td class="td6">
                         <div>
-                          <button class="btn btn-primary btn-sm d-flex">
+                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bx bx-trash"></i>
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
@@ -434,7 +434,7 @@
                       <td class="td4"><div>Oddiy</div></td>
                       <td class="td6">
                         <div>
-                          <button class="btn btn-primary btn-sm d-flex">
+                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="bx bx-trash"></i>
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
@@ -466,6 +466,24 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+
+    <!-- O'chirish modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary mx-1" data-bs-dismiss="modal">Bekor qilish</button>
+              <a href="" class="btn btn-primary mx-1">O'chirish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- O'chirish modal end  -->
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

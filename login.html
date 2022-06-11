@@ -17,6 +17,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
     >
 
     <title>Buyuk Ipak Yo'li Hotel</title>
@@ -39,7 +40,7 @@
   >
     <section
       class="d-flex align-items-center justify-content-center flex-column p-4 rounded-2"
-      style="background: rgba(255, 255, 255, 0.937)"
+      style="background: #fff"
     >
       <div>
         <img
@@ -55,16 +56,23 @@
           id="exampleFormControlInput1"
           placeholder="Login"
         />
-        <input
-          type="password"
-          class="form-control mt-3 w-px-250"
-          id="exampleFormControlInput1"
-          placeholder="Password"
-        />
+        <div class="position-relative mt-3">
+          <i
+            class="bx bx-low-vision position-absolute"
+            style="right: 0%; margin: 6px 5px; font-size: 25px"
+          ></i>
+          <input
+            class="form-control parolInput"
+            type="password"
+            placeholder="password"
+          />
+        </div>
         <div class="d-flex justify-content-center">
           <button type="submit" class="btn btn-primary mt-3">Sign In</button>
         </div>
       </form>
     </section>
+
+    <script src="js/password.js"></script>
   </body>
 </html>

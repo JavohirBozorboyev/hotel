@@ -45,7 +45,6 @@
     />
     <link rel="stylesheet" href="../assets/css/demo.css" />
     <link rel="stylesheet" href="../assets/css/table.css" />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -76,14 +75,14 @@
             </div>
 
             <a
-              href="javascript:void(0)"
+              href="/index.html"
               class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
             >
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
 
-          <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
+         <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
               <li class="menu-item ">
@@ -104,13 +103,13 @@
                   <div data-i18n="Analytics">Xodimlar</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item">
                 <a href="mehmonlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-smile"></i>
                   <div data-i18n="Analytics">Mehmonlar</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item ">
                 <a href="sms.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-envelope"></i>
                   <div data-i18n="Analytics">SMS</div>
@@ -172,93 +171,83 @@
           <div class="px-3 px-lg-4">
             <!-- Content -->
 
-            <!-- table box -->
-            <section class="mt-4 mt-lg-4 mb-5 overflow-hidden">
-              <div class="bg-white rounded-2 table-responsive p-2">
-                <table id="example" class="table display table-hover py-2">
-                  <thead class="table-info">
-                    <tr>
-                      <th>Hona</th>
-                      <th>Familiya</th>
-                      <th>Ism</th>
+            <!-- card box -->
 
-                      <th>Time</th>
-                      <th>Tel</th>
-                      <th>Edit</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="tableTr">
-                      <th scope="row"><div>101</div></th>
-                      <td class="tName">
-                        <div>Muhammad Sodiq</div>
-                      </td>
-                      <td class="tName">
-                        <div>Muhammad Ali</div>
-                      </td>
-                      <td class="td3">
-                        <div>05.12--08.12</div>
-                      </td>
-                      <td class="td3">
-                        <div>99 899 886 53 45</div>
-                      </td>
-                      <td class="td6">
-                        <div>
-                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bx bx-trash"></i>
-                            <div class="d-none d-xl-block">O'chirish</div>
-                          </button>
-                          <a
-                            href="id/mehmonlarId.html"
-                            class="btn btn-primary btn-sm d-flex text-white"
-                          >
-                            <i class="bx bx-pencil"></i>
-                            <div class="d-none d-xl-block">O'zgartirish</div>
-                          </a>
-                          <a href="mehmonaccount.html" class="btn btn-primary btn-sm d-flex m-1 my-0">
-                            <i class="bx bx-show"></i>
-                            <div class="d-none d-xl-block"> Ko'rish</div>
-                          </a>
+            <section class="mt-4 mt-lg-4 mb-5 overflow-hidden">
+              <div class="card mb-4">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                        <h5 class="m-4">Xodim sahifasi</h5>
+                        <div class="mx-4">
+                            <div class="btn-group " role="group" aria-label="Basic example">
+                                <a href="xodimpassword.html" class="btn btn-primary btn-sm" >Parolni o'zgartirish</a>
+                            </div>
                         </div>
-                      </td>
-                    </tr>
-                    <tr class="tableTr">
-                      <th scope="row"><div>102</div></th>
-                      <td class="tName">
-                        <div>Alisher</div>
-                      </td>
-                      <td class="tName">
-                        <div>Botirov</div>
-                      </td>
-                      <td class="td3">
-                        <div>05.12--08.12</div>
-                      </td>
-                      <td class="td3">
-                        <div>99 899 886 53 45</div>
-                      </td>
-                      <td class="td6">
-                        <div>
-                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bx bx-trash"></i>
-                            <div class="d-none d-xl-block">O'chirish</div>
-                          </button>
-                          <a
-                            href="id/mehmonlarId.html"
-                            class="btn btn-primary btn-sm d-flex text-white"
-                          >
-                            <i class="bx bx-pencil"></i> 
-                            <div class="d-none d-xl-block">O'zgartirish</div>
-                          </a>
-                          <a href="mehmonaccount.html" class="btn btn-primary btn-sm d-flex m-1 my-0">
-                            <i class="bx bx-show"></i>
-                            <div class="d-none d-xl-block">Ko'rish</div>
-                          </a>
+                    </div>
+                    <!-- Account -->
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form >
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">ism</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="firstName"
+                              name="firstName"
+                              value="John"
+                              
+                            />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Familiya</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="john.doe@example.com"
+                              placeholder="john.doe@example.com"
+                            />
+                          </div>    
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Telefon Raqam</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text">UZ (+99)</span>
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                class="form-control"
+                                placeholder=" 99 202 0111"
+                              />
+                            </div>
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Yashash joyi</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Manzil" />
+                          </div> 
+                          <div class="mb-3 col-md-6">
+                            <label for="currency" class="form-label">Daraja</label>
+                            <select id="currency" class="select2 form-select">
+                              
+                              <option value="">Admin</option>
+                              <option value="">Supper admin</option>
+                              
+                            </select>
+                          </div>
                         </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                        <div class="mt-2">
+                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                          <button type="submit" class="btn btn-primary me-2">Save</button>
+                          
+                        </div>
+                      </form>
+                    </div>
             </section>
           </div>
           <!-- Content wrapper -->
@@ -266,23 +255,8 @@
         <!-- / Layout page -->
       </div>
 
-       <!-- O'chirish modal start -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary mx-1" data-bs-dismiss="modal">Bekor qilish</button>
-                <a href="" class="btn btn-primary mx-1">O'chirish</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- O'chirish modal end -->
+       
+
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
@@ -290,23 +264,10 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
+    
+    
+    
    
-     <script
-      type="text/javascript"
-      charset="utf8"
-      src="../js/jquery.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="../js/dataTable.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"
-    ></script>
-    <script src="../js/xodimlar.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->

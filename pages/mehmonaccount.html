@@ -45,7 +45,6 @@
     />
     <link rel="stylesheet" href="../assets/css/demo.css" />
     <link rel="stylesheet" href="../assets/css/table.css" />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -76,14 +75,14 @@
             </div>
 
             <a
-              href="javascript:void(0)"
+              href="/index.html"
               class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
             >
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
 
-          <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
+         <div class="h-100 d-flex flex-column justify-content-between overflow-auto">
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
               <li class="menu-item ">
@@ -110,7 +109,7 @@
                   <div data-i18n="Analytics">Mehmonlar</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item ">
                 <a href="sms.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-envelope"></i>
                   <div data-i18n="Analytics">SMS</div>
@@ -172,90 +171,108 @@
           <div class="px-3 px-lg-4">
             <!-- Content -->
 
+            <!-- card box -->
+            <section class="mt-4 mt-lg-4 mb-2 overflow-hidden">
+              <div class="card mb-4">
+                    <h5 class="card-header">Mehmon sahifasi</h5>
+                    <!-- Account -->
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <div >
+                        <div class="row">
+                          <div class="mb-3 col-md-4">
+                            <label for="firstName" class="form-label">F.I.O</label>
+                            <h5 class="text-primary">Alisher Sadullayev Sardor o'g'li</h5>
+                          </div>
+                          
+                          <div class="mb-3 col-md-4">
+                            <label for="email" class="form-label">Telefon Raqam</label>
+                            <h5 class="text-primary">+99 899 123 45 67</h5>
+                          </div>    
+                          <div class="mb-3 col-md-4">
+                            <label class="form-label" for="phoneNumber">Tug'ulgan sanasi</label>
+                             <h5 class="text-primary">1990-yil 12-dekabr</h5>
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Pasport</label>
+                            <h5 class="text-primary">AB1057273</h5>
+                          </div> 
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Berilgan sana</label>
+                            <h5 class="text-primary">1990.12.12</h5>
+                          </div> 
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Kim tomonidan Berilgan</label>
+                            <h5 class="text-primary">Nammangan tuman IIB</h5>
+                          </div> 
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Fuqaroligi</label>
+                            <h5 class="text-primary">O'zbekiston</h5>
+                          </div> 
+                          
+                          
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Foydalanuvchi</label>
+                            <h5 class="text-primary">user</h5>
+                          </div> 
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Qo'shilgan vaqti</label>
+                            <h5 class="text-primary"> June 9, 2022, 10:24 am</h5>
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">O'zgartirilgan vaqti</label>
+                            <h5 class="text-primary"> June 20, 2022, 15:36 pm</h5>
+                          </div>
+                          <div class="mb-3 col-md-8">
+                            <label for="address" class="form-label">Yashash manzili</label>
+                            <h5 class="text-primary">Nammangan Chust tuman Chust shahar Olmazor ko'cha 56-uy</h5>
+                          </div>
+                          <div class="mb-3 col-md-4">
+                            <label for="address" class="form-label">Tashkilot</label>
+                            <h5 class="text-primary">Jismoniy shaxs</h5>
+                          </div>
+
+                          <div class="mb-3 col-md-12 shadow-lg p-4 rounded-2">
+                            <label for="address" class="form-label">Tashkilot</label>
+                            <h5 class="text-primary">Nammangan IIB</h5>
+                          </div>
+                          
+                        </div>
+                       
+                      </div>
+                    </div>
+            </section>
+
             <!-- table box -->
-            <section class="mt-4 mt-lg-4 mb-5 overflow-hidden">
+            <section class="mt-2 mb-5 overflow-hidden">
               <div class="bg-white rounded-2 table-responsive p-2">
                 <table id="example" class="table display table-hover py-2">
                   <thead class="table-info">
                     <tr>
                       <th>Hona</th>
-                      <th>Familiya</th>
-                      <th>Ism</th>
-
-                      <th>Time</th>
-                      <th>Tel</th>
-                      <th>Edit</th>
+                      <th>Berilgan sana</th>
+                      <th>Tugatilgan sana</th>
+                      <th>Hizmatlar</th>
+                      <th>Narh</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="tableTr">
                       <th scope="row"><div>101</div></th>
-                      <td class="tName">
-                        <div>Muhammad Sodiq</div>
-                      </td>
-                      <td class="tName">
-                        <div>Muhammad Ali</div>
+                      <td class="td3">
+                        <div>June 10, 2022, 15:50 pm</div>
                       </td>
                       <td class="td3">
-                        <div>05.12--08.12</div>
+                        <div>June 15, 2022, 10:00 am</div>
                       </td>
-                      <td class="td3">
-                        <div>99 899 886 53 45</div>
+                      <td>
+                        <div>Lorem ipsum dolor</div>
                       </td>
-                      <td class="td6">
-                        <div>
-                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bx bx-trash"></i>
-                            <div class="d-none d-xl-block">O'chirish</div>
-                          </button>
-                          <a
-                            href="id/mehmonlarId.html"
-                            class="btn btn-primary btn-sm d-flex text-white"
-                          >
-                            <i class="bx bx-pencil"></i>
-                            <div class="d-none d-xl-block">O'zgartirish</div>
-                          </a>
-                          <a href="mehmonaccount.html" class="btn btn-primary btn-sm d-flex m-1 my-0">
-                            <i class="bx bx-show"></i>
-                            <div class="d-none d-xl-block"> Ko'rish</div>
-                          </a>
-                        </div>
+                      <td>
+                        <div>1 300 000 sum</div>
                       </td>
                     </tr>
-                    <tr class="tableTr">
-                      <th scope="row"><div>102</div></th>
-                      <td class="tName">
-                        <div>Alisher</div>
-                      </td>
-                      <td class="tName">
-                        <div>Botirov</div>
-                      </td>
-                      <td class="td3">
-                        <div>05.12--08.12</div>
-                      </td>
-                      <td class="td3">
-                        <div>99 899 886 53 45</div>
-                      </td>
-                      <td class="td6">
-                        <div>
-                          <button type="button" class="btn btn-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bx bx-trash"></i>
-                            <div class="d-none d-xl-block">O'chirish</div>
-                          </button>
-                          <a
-                            href="id/mehmonlarId.html"
-                            class="btn btn-primary btn-sm d-flex text-white"
-                          >
-                            <i class="bx bx-pencil"></i> 
-                            <div class="d-none d-xl-block">O'zgartirish</div>
-                          </a>
-                          <a href="mehmonaccount.html" class="btn btn-primary btn-sm d-flex m-1 my-0">
-                            <i class="bx bx-show"></i>
-                            <div class="d-none d-xl-block">Ko'rish</div>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
+                   
                   </tbody>
                 </table>
               </div>
@@ -266,23 +283,8 @@
         <!-- / Layout page -->
       </div>
 
-       <!-- O'chirish modal start -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary mx-1" data-bs-dismiss="modal">Bekor qilish</button>
-                <a href="" class="btn btn-primary mx-1">O'chirish</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- O'chirish modal end -->
+       
+
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
@@ -290,23 +292,10 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
+    
+    
+    
    
-     <script
-      type="text/javascript"
-      charset="utf8"
-      src="../js/jquery.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="../js/dataTable.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"
-    ></script>
-    <script src="../js/xodimlar.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->

@@ -67,6 +67,5 @@ modQid.addEventListener("click", (e) => {
   modQidBox.style.display = "block";
 });
 
-let modalSearchTozalsh = document.querySelector(".modalSearchTozalsh");
-let selNameIsh = document.querySelectorAll(".selNameIsh");
-let modTozalshReset = document.querySelector(".modTozalshReset");
+
+

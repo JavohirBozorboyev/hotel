@@ -44,6 +44,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="../../assets/css/demo.css" />
+    <link rel="stylesheet" href="../../assets/css/table.css" />
 
     <!-- Page CSS -->
 
@@ -85,13 +86,13 @@
                   <div data-i18n="Analytics">Bosh Sahifa</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="../honalar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-door-open"></i>
                   <div data-i18n="Analytics">Honalar</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item ">
                 <a href="../xodimlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-user"></i>
                   <div data-i18n="Analytics">Xodimlar</div>
@@ -127,7 +128,7 @@
                     <li><a class="dropdown-item" href="../xodimpassword.html">Parolni o'zgartirish</a></li>
                     
                     <li><hr class="dropdown-divider"></li>
-                    <li><a href="../../login.html"  class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
+                    <li><a href="../../login.html" class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
                   </ul>
                 </div>
             </ul>
@@ -168,130 +169,66 @@
 
             <!-- card box -->
             <section class="mt-4 mb-5 overflow-hidden">
-              <div class="bg-white p-4 rounded-2">
-                <form action="">
-                  <div class="d-flex justify-content-between flex-wrap">
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Ism</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="Eshmat"
-                      />
+              <div class="bg-white rounded-2 p-2 p-md-4">
+                <div>
+                  <form class="d-flex flex-column">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Hona nomi"
+                            />
+                        </div>
+                      
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option >Foydalanuvchi soni</option>
+                                <option value="1">1 Kishi</option>
+                                <option value="2">2 Kishi</option>
+                                <option value="3">3 Kishi</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select  class="form-select" aria-label="Default select example">
+                                <option>Hona holati</option>
+                                <option value="">Bo'sh</option>
+                                <option value="">Band</option>
+                                <option value="">Bron</option>
+                                <option value="">Tozolovda</option>
+                                <option value="">Remont</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select class="form-select" aria-label="Default select example" >
+                                <option>Hona darajasi</option>
+                                <option value="">Oddiy</option>
+                                <option value="">Lyuks</option>
+                                <option value="">Polu-Lyuks</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                          <input class="form-control" type="number" placeholder="Hona narhi"/>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Qo'shimcha Izoh.." ></textarea>
+                        </div>
                     </div>
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Familiya</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="Toshmatov"
-                      />
-                    </div>
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Otasining Ismi</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="G'ishtemir O'g'li"
-                      />
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between flex-wrap mt-3">
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Telfon raqam</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="+998991234567"
-                      />
-                    </div>
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Tug'ulgan Sana</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="01.06.2022"
-                      />
-                    </div>
-                    <div class="mb-3 w-px-300">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Jinsi</label
-                      >
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option value="Erkak">Erkak</option>
-                        <option value="Ayol">Ayol</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="mt-2">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Lavozimi</label
-                      >
-                      <select
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option value="">Hona Tozalovchi</option>
-                        <option value="">Boshqaruv Meneger</option>
-                        <option value="">Oshpaz</option>
-                      </select>
-                    </div>
-                    <div class="mt-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Manzil</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        value="Namangan vil. Chortoq tumani, Guldirov QFY, Mustaqillik k. 77-uy."
-                      />
-                    </div>
-                  </div>
-                  <div class="mt-5">
-                    <div class="mb-3">
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="6"
-                        placeholder="Qo'shimcha Izoh..."
-                      ></textarea>
-                    </div>
-                    <div
-                      class="mt-4 position-relative d-flex justify-content-center"
-                    >
+                  
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
                       <a
-                        href="../xodimlar.html"
-                        class="btn btn-outline-primary m-1 w-px-150"
+                        href="../honalar.html"
+                        class="btn btn-outline-primary m-1"
                         >Ortga</a
                       >
-                      <a
-                        href="../xodimlar.html"
-                        class="btn btn-primary m-1 w-px-150"
-                        >Saqlash</a
-                      >
+                      <button
+                        type="submit"
+                        class="btn btn-primary m-1"
+                        id="liveToastBtn"
+                        >Saqlash</button >
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </section>
           </div>
@@ -307,7 +244,7 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-
+    <script src="../../js/table.js"></script>
     <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="../../assets/vendor/js/bootstrap.js"></script>

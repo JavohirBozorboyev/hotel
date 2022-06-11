@@ -165,69 +165,55 @@
           <!-- Content wrapper -->
           <div class="px-3 px-lg-4">
             <!-- Content -->
-            <div
-              class="bg-white mt-4 rounded-1 shadow-sm p-2 d-flex flex-wrap align-items-baseline flex-md-nowrap justify-content-lg-between"
-            >
-              <div class="d-flex flex-column">
-                <div class="w-100">Hona malumotlarini o'zgartirish</div>
-              </div>
-              <div
-                class="d-flex flex-column align-items-lg-end mt-4 mt-lg-0"
-                style="margin-left: 10px"
-              >
-                <div>
-                  <button class="btn btn-primary">Xona Qo'shish</button>
-                </div>
-              </div>
-            </div>
+           
 
             <!-- card box -->
-            <section class="mt-5 mb-5 overflow-hidden">
-              <div class="bg-white rounded-2 p-2">
+            <section class="mt-4 mb-5 overflow-hidden">
+              <div class="bg-white rounded-2 p-2 p-md-4">
                 <div>
                   <form class="d-flex flex-column">
-                    <div class="d-flex mt-2 flex-wrap justify-content-center">
-                      <input
-                        type="number"
-                        class="form-control w-px-200 m-1"
-                        id="exampleFormControlInput1"
-                        value="112"
-                      />
-                      <select
-                        class="form-select m-1 w-px-200"
-                        aria-label="Default select example"
-                      >
-                        <option value="1">1 Kishi</option>
-                        <option value="2">2 Kishi</option>
-                        <option value="3">3 Kishi</option>
-                      </select>
-                      <select
-                        class="form-select m-1 w-px-200"
-                        aria-label="Default select example"
-                      >
-                        <option value="">Bo'sh</option>
-                        <option value="">Band</option>
-                        <option value="">Bron</option>
-                        <option value="">Tozolovda</option>
-                        <option value="">Remont</option>
-                      </select>
-
-                      <select
-                        class="form-select m-1 w-px-200"
-                        aria-label="Default select example"
-                      >
-                        <option value="">Oddiy</option>
-                        <option value="">Lyuks</option>
-                        <option value="">Polu-Lyuks</option>
-                      </select>
-                    </div>
-                    <div class="mt-5 d-flex justify-content-center">
-                      <textarea
-                        class="form-control w-px-800"
-                        id="exampleFormControlTextarea1"
-                        rows="6"
-                        placeholder="Qo'shimcha Izoh.."
-                      ></textarea>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <input
+                              class="form-control"
+                              type="text"
+                              value="112 hona"
+                            />
+                        </div> 
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                               
+                                <option value="1">1 Kishi</option>
+                                <option value="2">2 Kishi</option>
+                                <option selected value="3">3 Kishi</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select  class="form-select" aria-label="Default select example">
+                                <option value="">Bo'sh</option>
+                                <option value="">Band</option>
+                                <option value="">Bron</option>
+                                <option selected value="">Tozolovda</option>
+                                <option value="">Remont</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <select class="form-select" aria-label="Default select example" >
+                                <option value="">Oddiy</option>
+                                <option selected value="">Lyuks</option>
+                                <option value="">Polu-Lyuks</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-3">
+                          <input
+                            class="form-control"
+                            type="number"
+                            value="500000"
+                          />
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Qo'shimcha Izoh.." ></textarea>
+                        </div>
                     </div>
                     <div class="mt-4 mb-4 d-flex justify-content-center">
                       <a
@@ -235,13 +221,11 @@
                         class="btn btn-outline-primary m-1"
                         >Ortga</a
                       >
-                      <a
-                        href="../honalar.html"
+                      <button
                         type="submit"
                         class="btn btn-primary m-1"
                         id="liveToastBtn"
-                        >Saqlash</a
-                      >
+                        >Saqlash</button >
                     </div>
                   </form>
                 </div>

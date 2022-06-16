@@ -28,11 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="../../assets/vendor/fonts/boxicons.css" />
-
-    <!-- Core CSS -->
     <link
       rel="stylesheet"
       href="../../assets/vendor/css/core.css"
@@ -45,10 +41,11 @@
     />
     <link rel="stylesheet" href="../../assets/css/demo.css" />
     <link rel="stylesheet" href="../../assets/css/table.css" />
-
-    <!-- Page CSS -->
-
-    <!-- Navbar vendor -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"
+    />
     <script src="../../assets/vendor/js/helpers.js"></script>
   </head>
 
@@ -102,6 +99,12 @@
                 <a href="../mehmonlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-smile"></i>
                   <div data-i18n="Analytics">Mehmonlar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="../tashkilot.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bxs-business"></i>
+                  <div data-i18n="Analytics">Tashkilotlar</div>
                 </a>
               </li>
               <li class="menu-item">
@@ -171,16 +174,9 @@
             <section class="mt-4 mb-5 overflow-hidden">
               <div class="bg-white rounded-2 p-2 p-md-4">
                 <div>
-                  <form class="d-flex flex-column">
+                  <div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <label for="firstName" class="form-label">Xodim username</label>
-                            <h5 class="text-primary">username</h5>
-                        </div> 
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <label for="firstName" class="form-label">Xodim email</label>
-                            <h5 class="text-primary">abs@gmail.com</h5>
-                        </div> 
+                         
                         <div class="col-md-6 col-lg-3 mb-3">
                             <label for="firstName" class="form-label">Ismi</label>
                             <h5 class="text-primary">Alisher</h5>
@@ -193,6 +189,14 @@
                             <label for="firstName" class="form-label">Otasining ismi</label>
                             <h5 class="text-primary">Bahodir o'gli</h5>
                         </div> 
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <label for="firstName" class="form-label">Xodim username</label>
+                            <h5 class="text-primary">username</h5>
+                        </div> 
+                        <div class="col-md-6 col-lg-3 mb-3">
+                            <label for="firstName" class="form-label">Xodim email</label>
+                            <h5 class="text-primary">abs@gmail.com</h5>
+                        </div>
                         <div class="col-md-6 col-lg-3 mb-3">
                             <label for="firstName" class="form-label">Lavozimi</label>
                             <h5 class="text-primary">Oshpaz</h5>
@@ -227,10 +231,66 @@
                         </div>
                     </div>
                     
-                  </form>
+                  </div>
                 </div>
               </div>
             </section>
+            <!-- xodim hizmat ko'rsatgan malumotlari tableda -->
+            <section class="mt-4 mt-lg-4 mb-5 overflow-hidden">
+              <nav aria-label="Page navigation example ">
+                <ul class="pagination bg-white mt-2 p-2 p-md-4 rounded-2 overflow-auto">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+              <div class="bg-white rounded-2 table-responsive p-2 p-md-4">
+                <table id="example" class="table display table-hover py-2">
+                  <thead class="table-info">
+                    <tr>
+                      <th>Hona</th>
+                      <th>Vaqt</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="tableTr">
+                      <th scope="row"><div>101</div></th>
+                     
+                      <td class="td3">
+                        <div>22.12.2022</div>
+                      </td>
+                      
+                      
+                    </tr>
+                    <tr class="tableTr">
+                      <th scope="row"><div>104</div></th>
+                     
+                      <td class="td3">
+                        <div>11.10.2021</div>
+                      </td>
+                      
+                      
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+              <nav aria-label="Page navigation example mt-3">
+                <ul class="pagination bg-white mt-2 p-2 p-md-4 rounded-2 overflow-auto">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </section>
+            <!-- xodim hizmat ko'rsatgan malumotlari tableda -->
           </div>
           <!-- Content wrapper -->
         </div>
@@ -244,18 +304,25 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../../js/table.js"></script>
-    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../../assets/vendor/js/bootstrap.js"></script>
-
+    
+     <script
+      type="text/javascript"
+      charset="utf8"
+      src="../../js/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="../../js/dataTable.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    
+    <script src="../../js/xodimlar.js"></script>
     <script src="../../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
-    />
-
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
   </body>

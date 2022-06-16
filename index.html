@@ -16,23 +16,13 @@
     />
 
     <title>Buyuk Ipak Yo'li Hotel</title>
-
-    <meta name="description" content="" />
-
-    <!-- Favicon -->
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
-
-    <!-- Core CSS -->
     <link
       rel="stylesheet"
       href="assets/vendor/css/core.css"
@@ -46,10 +36,6 @@
     <link rel="stylesheet" href="assets/css/demo.css" />
     <link rel="stylesheet" href="assets/css/card.css" />
     <link rel="stylesheet" href="assets/css/table.css" />
-
-    <!-- Page CSS -->
-
-    <!-- Navbar vendor -->
     <script src="assets/vendor/js/helpers.js"></script>
   </head>
 
@@ -103,6 +89,12 @@
                 <a href="pages/mehmonlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-smile"></i>
                   <div data-i18n="Analytics">Mehmonlar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="pages/tashkilot.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bxs-business"></i>
+                  <div data-i18n="Analytics">Tashkilotlar</div>
                 </a>
               </li>
               <li class="menu-item">
@@ -166,119 +158,126 @@
           <!-- Content wrapper -->
           <div class="px-3 px-lg-4">
             <!-- Content filter -->
-            <div
-              class="bg-white mt-4 rounded-1 shadow-sm p-2 d-flex flex-wrap align-items-baseline flex-md-nowrap justify-content-lg-between"
-            >
-              <div class="d-flex flex-column">
-                <div class="w-100">
-                  <form class="d-flex formSec">
-                    <input
-                      type="search"
-                      class="form-control searchA"
-                      id="exampleFormControlInput1"
-                      placeholder="Search..."
-                    />
-                  </form>
+            <div class="bg-white mt-2 rounded-1 shadow-sm p-2">
+              <div class="row">
+                <div class="col-12 row d-flex flex-wrap  m-0 p-0 ">
+                  <div class="col-12 col-md-6">
+                    <form class="d-flex formSec">
+                      <input
+                        type="search"
+                        class="form-control searchA"
+                        id="exampleFormControlInput1"
+                        placeholder="Search..."
+                      />
+                    </form>
+                  </div>
+                  <div class="col-12 col-md-6 d-flex justify-content-end" >
+                    <div class=" " role="group" aria-label="Basic example">
+                      <form action="" class="row d-flex justify-content-md-end ">
+                        <div class="col-6 my-1 my-md-0 col-md-5  ">
+                          <input type="date" class="form-control" id="exampleFormControlInput1" value="2022-07-22">
+                        </div>
+                        <div class="col-6 my-1 my-md-0 col-md-5 ">
+                          <input type="date" class="form-control" id="exampleFormControlInput1" value="2022-08-22"> 
+                        </div>
+                        <div class="col-6 col-md-2 d-flex justify-content-md-end "><button type="submit" class="btn btn-primary"><i class="bx bx-search"></i></button></div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-                <div class="w-100 mt-3">
-                  <button
-                    type="button"
-                    style="background: #bcafff; border: none"
-                    class="btn btn-primary btn-sm m-1 hamBtn"
-                  >
-                    Hammasi
-                  </button>
-                  <button
-                    type="button"
-                    style="background: #73ce00; border: #73ce00"
-                    class="btn text-white btn-outline-success btn-sm m-1 boshBtn"
-                  >
-                    Bo'sh
-                  </button>
-                  <button
-                    type="button"
-                    style="background: #bbbbbb; border: #bbbbbb"
-                    class="btn text-white btn-secondary btn-sm m-1 banEtBtn"
-                  >
-                    Bron
-                  </button>
-                  <button
-                    style="background: #ff9b9b; border: #ff9b9b"
-                    type="button"
-                    class="btn btn-danger btn-sm m-1 bandBtn"
-                  >
-                    Band
-                  </button>
+                <div class="row d-flex justify-content-between align-items-start  m-0 p-0">
+                  <div class="col-11 mt-3 d-flex align-items-center flex-wrap flex-md-nowrap flex-md-row">
+                    <button class="btn btn-primary btn-sm m-1 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Holatlar</button>
+                    <div class="collapse" id="collapseWidthExample">
+                      <div class=" d-flex flex-wrap  flex-md-nowrap ">
+                        <button
+                          type="button"
+                          style="background: #bcafff; border: none"
+                          class="btn btn-primary btn-sm m-1 hamBtn"
+                        >
+                          Hammasi
+                        </button>
+                        <button
+                          type="button"
+                          style="background: #73ce00; border: #73ce00"
+                          class="btn text-white btn-outline-success btn-sm m-1 boshBtn"
+                        >
+                          Bo'sh
+                        </button>
+                        <button
+                          type="button"
+                          style="background: #bbbbbb; border: #bbbbbb"
+                          class="btn text-white btn-secondary btn-sm m-1 banEtBtn"
+                        >
+                          Bron
+                        </button>
+                        <button
+                          style="background: #ff9b9b; border: #ff9b9b"
+                          type="button"
+                          class="btn btn-danger btn-sm m-1 bandBtn"
+                        >
+                          Band
+                        </button>
 
-                  <button
-                    type="button"
-                    style="background: #ffca10; border: #ffca10"
-                    class="btn btn-warning btn-sm m-1 tozBtn"
-                  >
-                    Tozolovda
-                  </button>
+                        <button
+                          type="button"
+                          style="background: #ffca10; border: #ffca10"
+                          class="btn btn-warning btn-sm m-1 tozBtn"
+                        >
+                          Tozolovda
+                        </button>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm m-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                      Kategoreya
+                    </button>
+                    <div class="collapse " id="collapseWidthExample2">
+                      <div class=" d-flex flex-wrap  p-0">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 oddiyBtn"
+                          >
+                            Oddiy
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 poluBtn"
+                          >
+                            Polu-Lyuks
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 lyuksBtn"
+                          >
+                            Lyuks
+                          </button>
 
-                  <button
-                    type="button"
-                    style="background: #787878; border: #787878"
-                    class="btn btn-dark btn-sm m-1 tamBtn"
-                  >
-                    Remont
-                  </button>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-column align-items-lg-end mt-4 mt-lg-0"
-                style="margin-left: 10px"
-              >
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-primary jadval">
-                    <i class="bx bxs-layout"></i> Jadval
-                  </button>
-
-                  <button type="button" class="btn btn-primary kartochka">
-                    <i class="bx bxs-copy"></i> Kartochka
-                  </button>
-                </div>
-
-                <div class="mt-3 d-flex flex-lg-row flex-wrap">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 oddiyBtn"
-                  >
-                    Oddiy
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 poluBtn"
-                  >
-                    Polu-Lyuks
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 lyuksBtn"
-                  >
-                    Lyuks
-                  </button>
-
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 uchBtn"
-                  >
-                    3-kishilik
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 ikkiBtn"
-                  >
-                    2-kishilik
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm m-1 birBtn"
-                  >
-                    1-kishilik
-                  </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 uchBtn"
+                          >
+                            3-kishilik
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 ikkiBtn"
+                          >
+                            2-kishilik
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary btn-sm m-1 birBtn"
+                          >
+                            1-kishilik
+                          </button>
+                      </div>
+                    </div>
+                    
+                  
+                  </div>
+                  <div class="col-1 mt-3 d-flex justify-content-end  ">
+                    <button class="btn btn-primary btn-sm m-1" data-bs-toggle="modal" data-bs-target="#exampleModalZakaz">Zakaz</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -312,30 +311,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="cardXona bg-dark text-white">
-                  <div class="header-card">
-                    <h3>102 xona</h3>
-                    <div>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                      <h3 class="bx bx-user"></h3>
-                    </div>
-                  </div>
-                  <div class="cBody">
-                    <div><p>Polu-Lyuks</p></div>
-
-                    <div>
-                      <a
-                        class="btn btn-primary btn-sm"
-                        href="pages/modal/modal.html"
-                      >
-                        Tozalov
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="cardXona bg-warning text-white">
                   <div class="header-card">
                     <h3>103 xona</h3>
@@ -355,7 +330,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="cardXona bg-danger text-white">
                   <div class="header-card">
                     <h3>104 xona</h3>
@@ -382,7 +356,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="cardXona bg-secondary text-white">
                   <div class="header-card">
                     <h3>105 xona</h3>
@@ -405,157 +378,101 @@
                 </div>
               </div>
             </section>
-            <!-- tabble section -->
-            <section class="mt-5 mb-5 overflow-hidden tableSection d-none">
-              <div class="bg-white rounded-2 table-responsive">
-                <table class="table table-hover">
-                  <tbody>
-                    <tr class="tableTr bandEt">
-                      <th scope="row">101</th>
-                      <td class="td1">
-                        <div style="background: #e2e2e2">Band Etilgan</div>
-                      </td>
-                      <td class="td2">
-                        <div>
-                          <i class="bx bx-user"></i> <i class="bx bx-user"></i>
-                        </div>
-                      </td>
-                      <td class="td3">
-                        <div>05.05-07.05 gacha</div>
-                      </td>
-                      <td class="td4"><div>Lyuks</div></td>
-                      <td class="td5">
-                        <div>
-                          <button class="btn btn-primary btn-sm">
-                            Bo'shatish
-                          </button>
-                          <button class="btn btn-primary btn-sm">
-                            Band Qilish
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="tableTr bandXona">
-                      <th scope="row">102</th>
-                      <td class="td1">
-                        <div style="background: #ff9b9b">Band</div>
-                      </td>
-                      <td class="td2">
-                        <div>
-                          <i class="bx bx-user"></i>
-                          <i class="bx bx-user"></i>
-                          <i class="bx bx-user"></i>
-                        </div>
-                      </td>
-                      <td class="td3"><div>05.05-07.05 gacha</div></td>
-                      <td class="td4"><div>Polu-Lyuks</div></td>
-                      <td class="td5">
-                        <div>
-                          <a
-                            class="btn btn-primary btn-sm px-4"
-                            href="pages/modal/modal.html"
-                          >
-                            Tozalov
-                          </a>
-                          <button class="btn btn-primary btn-sm">
-                            Bo'shatish
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="tableTr tozalash">
-                      <th scope="row">103</th>
-                      <td class="td1">
-                        <div style="background: #ffca10">Tozolovda</div>
-                      </td>
-                      <td class="td2">
-                        <div><i class="bx bx-user"></i></div>
-                      </td>
-                      <td class="td3"><div>05.05-07.05 gacha</div></td>
-                      <td class="td4"><div>Oddiy</div></td>
-                      <td class="td5">
-                        <div>
-                          <button class="btn btn-primary btn-sm">
-                            Bo'shatish
-                          </button>
-                          <button class="btn btn-primary btn-sm">Remont</button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="tableTr bosh">
-                      <th scope="row">104</th>
-                      <td class="td1">
-                        <div style="background: #73ce00">Bo'sh</div>
-                      </td>
-                      <td class="td2">
-                        <div>
-                          <i class="bx bx-user"></i> <i class="bx bx-user"></i>
-                        </div>
-                      </td>
-                      <td class="td3"><div>05.05-07.05 gacha</div></td>
-                      <td class="td4"><div>Polu-Lyuks</div></td>
-                      <td class="td5">
-                        <div>
-                          <a
-                            class="btn btn-primary btn-sm px-4"
-                            href="pages/modal/modal.html"
-                          >
-                            Band
-                          </a>
-                          <a
-                            class="btn btn-primary btn-sm px-4"
-                            href="pages/modal/modal.html"
-                          >
-                            Bron
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="tableTr remont">
-                      <th scope="row">105</th>
-                      <td class="td1">
-                        <div style="background: #767676">Remont</div>
-                      </td>
-                      <td class="td2">
-                        <div>
-                          <i class="bx bx-user"></i>
-                          <i class="bx bx-user"></i>
-                          <i class="bx bx-user"></i>
-                        </div>
-                      </td>
-                      <td class="td3"><div>05.05-07.05 gacha</div></td>
-                      <td class="td4"><div>Oddiy</div></td>
-                      <td class="td5">
-                        <div>
-                          <a
-                            class="btn btn-primary btn-sm px-4"
-                            href="pages/modal/modal.html"
-                          >
-                            Tozalov
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
+            
            
           </div>
           <!-- Content wrapper -->
         </div>
-        <!-- / Layout page -->
       </div>
-
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+
+
+
+    
+<!-- Modal zakaz -->
+<div class="modal fade" id="exampleModalZakaz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hona boshqaruvi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="modQidBox row" >
+            <div class="col-12 col-md-6">
+              <div class="mb-1 d-flex">
+                <input
+                  type="text"
+                  class="form-control form-control-sm modalSearch"
+                  id="recipient-name"
+                  placeholder="Honani qidirish"
+                />
+              </div>
+              <div>
+                <select
+                  class="form-select"
+                  size="3"
+                  aria-label="size 8 select example"
+                >
+                  <option value="" class="p-2 selName">
+                    101 hona
+                  </option>
+                  <option value="" class="p-2 selName">
+                    102 hona
+                  </option>
+                  <option value="" class="p-2 selName">
+                    103 hona
+                  </option>
+                  <option value="" class="p-2 selName">
+                    104 hona
+                  </option>
+                  <option value="" class="p-2 selName">
+                    105 hona
+                  </option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mt-2 mt-md-0">
+             <select
+                  class="form-select"
+                  size="4"
+                  aria-label="size 8 select example"
+                >
+                  <option value="" class="p-2 ">
+                    Bron
+                  </option>
+                  <option value="" class="p-2 ">
+                    Band
+                  </option>
+                  <option value="" class="p-2 ">
+                    Bo'shatish
+                  </option>
+                  <option value="" class="p-2 ">
+                    Tozalash
+                  </option>
+                 
+                  
+                </select>
+            </div>
+            <div class="col-12 mt-4 d-flex justify-content-center">
+              <button type="reset" class="btn btn-outline-primary m-1 my-0">Tozalash</button>
+              <button type="submit" class="btn btn-primary m-1 my-0">Saqlash</button>
+            </div> 
+          </div>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
     
 
-    <!-- toats bg-danger  -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="liveToast" class="toast bg-danger" role="alert" aria-live="assertive" aria-atomic="true"  data-bs-delay="10000">
+<!-- toats bg-danger  -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3 d-flex justify-content-center align-items-start w-100 h-100 " style="z-index: 10000;">
+      <div id="liveToast" class="toast bg-danger" role="alert" aria-live="assertive" aria-atomic="true"  data-bs-delay="5000">
         <div class="toast-header">
           
           <strong class="me-auto">Bootstrap</strong>
@@ -566,23 +483,51 @@
           Hello, world! This is a toast message.
         </div>
       </div>
-   </div>
-   <!-- toats bg-sucses  -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="liveToast" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true"  data-bs-delay="10000">
-        <div class="toast-header">
-          
-          <strong class="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
-        </div>
-      </div>
-   </div>
+</div>
+<!-- toats bg-sucses  -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3 d-flex justify-content-center align-items-start w-100 h-100">
+  <div id="liveToast" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true"  data-bs-delay="5000">
+    <div class="toast-header">
+      
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
 
-    <!-- band hona tozalash modal section end  -->
+<!-- Block window -->
+<!-- <div class="block position-absolute d-flex justify-content-center align-items-center  " style="left: 0%; right: 0%; z-index: 10000; top: 0%; bottom: 0%; background: rgba(0, 0, 0, 0.781);" >
+      <div class=" col-10 col-md-4 bg-white p-2 p-md-4 rounded-2">
+        <div class="d-flex justify-content-center mb-4">
+          <i class="bx bx-lock" style="font-size: 80px;"></i>
+        </div>
+        <div class="">
+          
+          <input
+            class="form-control mb-3"
+            type="text"
+            value="username"
+          />
+          <div class="position-relative mt-3">
+            <i
+              class="bx bx-low-vision position-absolute"
+              style="right: 0%; margin: 6px 5px; font-size: 25px"
+            ></i>
+            <input
+              class="form-control parolInput"
+              type="password"
+              placeholder="password"
+            />
+        </div>
+       <div class="d-flex justify-content-center"> <button class="btn btn-primary mt-3">Ochish</button></div>
+        </div>
+      </div>
+
+    </div> -->
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -592,10 +537,12 @@
 
     <script src="assets/vendor/js/bootstrap.js"></script>
     <script src="assets/vendor/js/menu.js"></script>
+    <script src="js/password.js"></script>
     
     <!-- endbuild -->
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    
   </body>
 </html>

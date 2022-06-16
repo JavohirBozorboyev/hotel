@@ -86,13 +86,13 @@
                   <div data-i18n="Analytics">Bosh Sahifa</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item ">
                 <a href="../honalar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-door-open"></i>
                   <div data-i18n="Analytics">Honalar</div>
                 </a>
               </li>
-              <li class="menu-item ">
+              <li class="menu-item  ">
                 <a href="../xodimlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-user"></i>
                   <div data-i18n="Analytics">Xodimlar</div>
@@ -110,7 +110,7 @@
                   <div data-i18n="Analytics">Tashkilotlar</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="../sms.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-envelope"></i>
                   <div data-i18n="Analytics">SMS</div>
@@ -179,59 +179,32 @@
                 <div>
                   <form class="d-flex flex-column">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-3">
+                        <div class="col-md-12 col-lg-12 mb-4">
+                            <label for="">Sabab</label>
                             <input
                               class="form-control"
                               type="text"
-                              placeholder="Hona nomi"
+                              placeholder="Sms mavzusi"
                             />
                         </div>
-                      
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <select class="form-select" aria-label="Default select example">
-                                <option >Foydalanuvchi soni</option>
-                                <option value="1">1 Kishi</option>
-                                <option value="2">2 Kishi</option>
-                                <option value="3">3 Kishi</option>
-                            </select>
+                        <div class="col-md-12 col-lg-12 mb-4">
+                            <label for="">To'liq habar</label>
+                            <textarea class="form-control" placeholder="Habarni kiriting" id="exampleFormControlTextarea1" rows="5"></textarea>
                         </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <select  class="form-select" aria-label="Default select example">
-                                <option>Hona holati</option>
-                                <option value="">Bo'sh</option>
-                                <option value="">Band</option>
-                                <option value="">Bron</option>
-                                <option value="">Tozolovda</option>
-                                <option value="">Remont</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <select class="form-select" aria-label="Default select example" >
-                                <option>Hona darajasi</option>
-                                <option value="">Oddiy</option>
-                                <option value="">Lyuks</option>
-                                <option value="">Polu-Lyuks</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                          <input class="form-control" type="number" placeholder="Hona narhi"/>
-                        </div>
-                        <div class="col-md-12 mt-4">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Qo'shimcha Izoh.." ></textarea>
-                        </div>
+                       
                     </div>
                   
                     <div class="mt-4 mb-4 d-flex justify-content-center">
                       <a
-                        href="../honalar.html"
+                        href="../sms.html"
                         class="btn btn-outline-primary m-1"
-                        >Ortga</a
+                        >Bekor qilish</a
                       >
                       <button
                         type="submit"
                         class="btn btn-primary m-1"
                         id="liveToastBtn"
-                        >Saqlash</button >
+                        > Jo'natish</button >
                     </div>
                   </form>
                 </div>
@@ -250,7 +223,7 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../../js/table.js"></script>
+    <script src="../../js/password.js"></script>
     <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="../../assets/vendor/js/bootstrap.js"></script>

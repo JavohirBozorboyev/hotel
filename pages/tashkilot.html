@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="assets/"
+  data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -46,13 +46,20 @@
     <link rel="stylesheet" href="../assets/css/demo.css" />
     <link rel="stylesheet" href="../assets/css/table.css" />
 
+    <!-- Page CSS -->
+
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"
     />
-
-    <!-- Page CSS -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Navbar vendor -->
     <script src="../assets/vendor/js/helpers.js"></script>
@@ -98,19 +105,19 @@
                   <div data-i18n="Analytics">Honalar</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item ">
                 <a href="xodimlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-user"></i>
                   <div data-i18n="Analytics">Xodimlar</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item">
                 <a href="mehmonlar.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-smile"></i>
                   <div data-i18n="Analytics">Mehmonlar</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="tashkilot.html" class="menu-link">
                   <i class="menu-icon tf-icons bx bxs-business"></i>
                   <div data-i18n="Analytics">Tashkilotlar</div>
@@ -140,7 +147,7 @@
                     <li><a class="dropdown-item" href="xodimpassword.html">Parolni o'zgartirish</a></li>
                     
                     <li><hr class="dropdown-divider"></li>
-                    <li><a href="../login.html"  class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
+                    <li><a href="../login.html" class="dropdown-item d-flex justify-content-between align-items-center cursor-pointer"> Chiqish<i class="bx bx-log-out"></i></a></li>
                   </ul>
                 </div>
             </ul>
@@ -176,22 +183,20 @@
 
           <!-- Content wrapper -->
           <div class="px-3 px-lg-4">
-            <!-- Content -->
             <div class="bg-white mt-3 mb-4 rounded-1 shadow-sm p-2 d-flex align-items-center flex-wrap justify-content-center justify-content-sm-between" >
-              <div>Mehmonlar haqilda malumotlar</div>
+              <div>Tashkilotlar haqilda malumotlar</div>
 
-              <a href="id/mehmonqosh.html" class="btn btn-primary m-1">
-                Mehmon Qo'shish
+              <a href="" class="btn btn-primary m-1">
+                Tashkilot Qo'shish
               </a>
             </div>
-
+            
             <!-- table box -->
-            <section class="mt-4 mt-lg-4 mb-5 overflow-hidden">
+            <section class=" mt-lg-2 mb-5 overflow-hidden">
               <div class="bg-white rounded-2 table-responsive p-2 p-md-4">
                 <table id="example" class="table display table-hover py-2">
                   <thead class="table-info">
                     <tr>
-                      <th>Hona</th>
                       <th>Familiya</th>
                       <th>Ism</th>
 
@@ -202,7 +207,6 @@
                   </thead>
                   <tbody>
                     <tr class="tableTr">
-                      <th scope="row"><div>101</div></th>
                       <td class="tName">
                         <div>Muhammad Sodiq</div>
                       </td>
@@ -210,10 +214,10 @@
                         <div>Muhammad Ali</div>
                       </td>
                       <td class="td3">
-                        <div>05.12--08.12</div>
+                        <div>05.12.1995</div>
                       </td>
                       <td class="td3">
-                        <div>99 899 886 53 45</div>
+                        <div>99 899 391 25 05</div>
                       </td>
                       <td class="td6">
                         <div>
@@ -222,20 +226,21 @@
                             <div class="d-none d-xl-block">O'chirish</div>
                           </button>
                           <a
-                            href="id/mehmonlarId.html"
-                            class="btn btn-primary btn-sm d-flex text-white"
+                            href="id/xodimlarId.html"
+                            class="btn text-white btn-primary btn-sm d-flex"
                           >
                             <i class="bx bx-pencil"></i>
                             <div class="d-none d-xl-block">O'zgartirish</div>
                           </a>
-                          <a href="id/seemehmon.html" class="btn btn-primary btn-sm d-flex m-1 my-0">
+                          <a href="" class="btn btn-primary btn-sm d-flex m-1 my-0">
                             <i class="bx bx-show"></i>
-                            <div class="d-none d-xl-block"> Ko'rish</div>
+                            <div class="d-none d-xl-block">Ko'rish</div>
                           </a>
                         </div>
                       </td>
                     </tr>
-                  
+                   
+                    
                   </tbody>
                 </table>
               </div>
@@ -246,12 +251,12 @@
         <!-- / Layout page -->
       </div>
 
-       <!-- O'chirish modal start -->
+      <!-- O'chirish modal start -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-sm">
           <div class="modal-content">
             <div class="modal-header">
-              <h5>Mehmonni o'chirish</h5>
+              <h5>Xodimni O'chirish</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -264,6 +269,7 @@
         </div>
       </div>
       <!-- O'chirish modal end -->
+
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
@@ -271,7 +277,6 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-   
      <script
       type="text/javascript"
       charset="utf8"

@@ -44,6 +44,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="../../assets/css/demo.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <!-- Page CSS -->
 
@@ -173,31 +174,35 @@
 
             <!-- card box -->
             <section class="mt-4 mb-5  bg-white p-2 p-md-4 rounded-2">
-              <div class="mb-4 d-flex justify-content-end">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-outline-primary modQosh">
-                    + Qo'shish
-                  </button>
-                  <button type="button" class="btn btn-primary modQid">
-                    Qidirsh
-                  </button>
-                </div>
-              </div>
+              
               <div class="modQidBox">
-                <form>
-                  <div class="mb-3 d-flex">
-                    <input
-                      type="Search..."
-                      class="form-control modalSearch"
-                      id="recipient-name"
-                      placeholder="Search..."
-                    />
+                <form class="row">
+
+                  <div class="col-md-3 mt-2 mt-md-0">
+                    <label for="">Hona raqami</label>
+                    <h5 class="text-primary mt-1">203</h5>
                   </div>
-                  <div>
+                  <div class="col-md-3 mt-2 mt-md-0">
+                    <label for="">Hona sig'imi</label>
+                    <h5 class="text-primary mt-1">3 kishi</h5>
+                  </div>
+                  <div class="col-md-3 mt-2 mt-md-0">
+                    <label for="">Hona darajasi</label>
+                    <h5 class="text-primary mt-1">Polu-lyuks</h5>
+                  </div>
+                 
+                  <div class="col-md-3 mt-2 mt-md-0">
+                    <label for="">Hona narhi</label>
+                    <h5 class="text-primary mt-1">300,000.00</h5>
+                  </div>
+                 
+                  <div class="col-12 my-3">
+                    <label for="">Foydalanuvchilarni tanlang</label>
                     <select
-                      class="form-select"
+                      class="form-select js-example-basic-multiple"
                       size="8"
                       aria-label="size 8 select example"
+                      name="states[]" multiple="multiple"
                     >
                       <option value="" class="p-2 selName">
                         Alisher Botirov
@@ -230,43 +235,36 @@
                         Temur Po'latov
                       </option>
                     </select>
+                   
+                    
                   </div>
-                  <div class="my-4 mb-5 d-flex flex-wrap justify-content-start align-content-center ">
-                      <div>
-                        <label for="exampleFormControlInput1" class="form-label ">Narh</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Narh"/>
-                      </div>
-                      <div class="mx-md-5 my-4 my-md-0">
-                        <label for="exampleFormControlInput1" class="form-label">Muddat</label>
-                          <div class="d-flex flex-wrap justify-content-start">
-                            
-                            <div class=" d-flex align-items-center">
-                              <input type="datetime-local" class="form-control" id="exampleFormControlInput1"/>
-                              <label for="exampleFormControlInput1" class="form-label m-2">dan</label>
-                            </div>
-                            <div class=" d-flex align-items-center my-3 my-md-0 mx-md-3">
-                              <input type="datetime-local" class="form-control" id="exampleFormControlInput1" />
-                              <label for="exampleFormControlInput1" class="form-label  m-2">gacha</label>
-                            </div>
-                          </div>
-                      </div>
+                  <div class="col-12 col-md-4 col-lg-3 mt-2 ">
+                    <label for="">Boshlanish sanasi</label>
+                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1">
                   </div>
-                  <div
-                    class="mt-4 position-relative d-flex justify-content-center"
-                  >
-                    <button
-                      type="reset"
+                  <div class="col-12 col-md-4 col-lg-3 mt-2 ">
+                    <label for="">Tugash sanasi</label>
+                    <input type="datetime-local" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mt-2 ">
+                    <label for="">Narx</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Narx">
+                  </div>
+                 
+                  <div class="mt-5 position-relative d-flex justify-content-center">
+                    <a href="../../index.html"
+                      
                       class="btn btn-outline-primary m-1 w-px-150 modQidReset"
                     >
-                      Tozalash
-                    </button>
+                      Ortga
+                    </a>
                     <button type="button" class="btn btn-primary m-1 w-px-150">
                       Saqlash
                     </button>
                   </div>
                 </form>
               </div>
-              <div class="modQoshBox" style="display: none">
+              <!-- <div class="modQoshBox" style="display: none">
                 <form action="">
                   <div class="d-flex justify-content-between flex-wrap">
                     <div class="mb-3 w-px-300">
@@ -576,7 +574,7 @@
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> -->
             </section>
           </div>
           <!-- Content wrapper -->
@@ -593,11 +591,12 @@
     <!-- build:js assets/vendor/js/core.js -->
 
     <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
-
+    <script src="../../js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="../../assets/vendor/js/bootstrap.js"></script>
 
     <script src="../../assets/vendor/js/menu.js"></script>
-    <script src="../../js/modal.js"></script>
+    
     <!-- endbuild -->
 
     <!-- Main JS -->

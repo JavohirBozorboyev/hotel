@@ -1140,3 +1140,10 @@ modalSearch.addEventListener("keyup", (e) => {
 });
 
 
+            $(function () {
+                $('#datetimepicker4').datetimepicker({
+                     debug: true,                  
+                    locale: 'ru'                    
+                });
+            });
+

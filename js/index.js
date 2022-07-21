@@ -6,7 +6,6 @@ const kartochka = document.querySelector(".kartochka");
 const cardSection = document.querySelector(".cardSection");
 const tableSection = document.querySelector(".tableSection");
 
-
 FormSec.addEventListener("keyup", (e) => {
   e.preventDefault();
   let searchValue = searchA.value;
@@ -25,7 +24,6 @@ FormSec.addEventListener("keyup", (e) => {
       item.style.display = "none";
     }
   });
-
 });
 
 // ------------------------------------------------------------------------
@@ -35,7 +33,6 @@ const boshBtn = document.querySelector(".boshBtn");
 const banEtBtn = document.querySelector(".banEtBtn");
 const bandBtn = document.querySelector(".bandBtn");
 const tozBtn = document.querySelector(".tozBtn");
-
 
 const oddiyBtn = document.querySelector(".oddiyBtn");
 const poluBtn = document.querySelector(".poluBtn");
@@ -47,8 +44,6 @@ const uchBtn = document.querySelector(".uchBtn");
 const tableTr = document.querySelectorAll(".tableTr");
 const turi = document.querySelectorAll(".turi");
 const home = document.querySelectorAll(".home");
-
-
 
 boshBtn.addEventListener("click", () => {
   cardXona.forEach((item) => {
@@ -251,7 +246,6 @@ boshBtn.addEventListener("click", () => {
       }
     });
   });
-
 });
 
 banEtBtn.addEventListener("click", () => {
@@ -455,8 +449,6 @@ banEtBtn.addEventListener("click", () => {
       }
     });
   });
-
- 
 });
 
 bandBtn.addEventListener("click", () => {
@@ -660,7 +652,6 @@ bandBtn.addEventListener("click", () => {
       }
     });
   });
- 
 });
 
 tozBtn.addEventListener("click", () => {
@@ -964,7 +955,6 @@ poluBtn.addEventListener("click", () => {
       }
     });
   });
- 
 });
 
 lyuksBtn.addEventListener("click", () => {
@@ -1011,7 +1001,6 @@ lyuksBtn.addEventListener("click", () => {
       }
     });
   });
- 
 });
 
 birBtn.addEventListener("click", () => {
@@ -1024,7 +1013,6 @@ birBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
- 
 });
 
 ikkiBtn.addEventListener("click", () => {
@@ -1036,7 +1024,6 @@ ikkiBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
-  
 });
 
 uchBtn.addEventListener("click", () => {
@@ -1048,7 +1035,6 @@ uchBtn.addEventListener("click", () => {
       item.style.display = "none";
     }
   });
- 
 });
 
 hamBtn.addEventListener("click", () => {
@@ -1063,6 +1049,42 @@ hamBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("oddiy") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
   poluBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
@@ -1071,6 +1093,42 @@ hamBtn.addEventListener("click", () => {
       } else {
         item.style.display = "none";
       }
+    });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("polu-lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
     });
   });
 
@@ -1082,12 +1140,48 @@ hamBtn.addEventListener("click", () => {
         item.style.display = "none";
       }
     });
+    uchBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 3
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    ikkiBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 2
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+    birBtn.addEventListener("click", () => {
+      cardXona.forEach((item) => {
+        if (
+          item.innerHTML.toLowerCase().includes("lyuks") &&
+          item.children[0].children[1].children.length == 1
+        ) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
 
   birBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
-      let value = item.children[1].children[0].children[1].innerHTML;
-      if (value.includes("1")) {
+      let value = item.children[0].children[1].children.length;
+      if (value == 1) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
@@ -1097,8 +1191,8 @@ hamBtn.addEventListener("click", () => {
 
   ikkiBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
-      let value = item.children[1].children[0].children[1].innerHTML;
-      if (value.includes("2")) {
+      let value = item.children[0].children[1].children.length;
+      if (value == 2) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
@@ -1108,17 +1202,15 @@ hamBtn.addEventListener("click", () => {
 
   uchBtn.addEventListener("click", () => {
     cardXona.forEach((item) => {
-      let value = item.children[1].children[0].children[1].innerHTML;
-      if (value.includes("3")) {
+      let value = item.children[0].children[1].children.length;
+      if (value == 3) {
         item.style.display = "block";
       } else {
         item.style.display = "none";
       }
     });
   });
- 
 });
-
 
 let modalSearch = document.querySelector(".modalSearch");
 let selName = document.querySelectorAll(".selName");
@@ -1138,12 +1230,3 @@ modalSearch.addEventListener("keyup", (e) => {
     }
   });
 });
-
-
-            $(function () {
-                $('#datetimepicker4').datetimepicker({
-                     debug: true,                  
-                    locale: 'ru'                    
-                });
-            });
-
